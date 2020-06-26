@@ -1,0 +1,10 @@
+name: dhi_hydrotel
+channels:
+- conda-forge
+- mullenkamp
+- defaults
+dependencies:
+- python=3.8
+- pyhydrotel
+- pyyaml
+- schedule

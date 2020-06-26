@@ -1,0 +1,9 @@
+Input:
+    base_path: D:\DHIMC
+    result_folders: [ExportResultsAshburton]
+    file_index: file_index.json
+Output:
+    server: SQL03prod
+    database: Hydrotel
+    sample_table: SampleBuf
+    quality_code: 2
