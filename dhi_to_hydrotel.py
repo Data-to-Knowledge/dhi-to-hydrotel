@@ -108,10 +108,6 @@ def main():
 
 
 ####################################################################
-### Schedule the runs
+### run
 
-schedule.every().hour.at(':45').do(main)
-
-while True:
-    schedule.run_pending()
-    sleep(1)
+main()

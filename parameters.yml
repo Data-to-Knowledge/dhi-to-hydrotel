@@ -1,6 +1,6 @@
 Input:
     base_path: D:\DHIMC
-    result_folders: [ExportResultsAshburton]
+    result_folders: [ExportResultsAshburton, ExportResultsAshley, ExportResultsOpihi, ExportResultsTemuka]
     file_index: file_index.json
 Output:
     server: SQL03prod
