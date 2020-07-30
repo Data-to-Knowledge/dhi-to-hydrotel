@@ -30,6 +30,7 @@ def main():
     base_path = param['Input']['base_path']
     result_folders = param['Input']['result_folders']
     file_index = param['Input']['file_index']
+    min_file_size = param['Input']['min_file_size']
 
     ####################################
     ### Get the files
@@ -38,7 +39,7 @@ def main():
 
     files = {}
     for fold in result_folders:
-        files1 = [files.update({os.path.join(base_path, fold, f): int(os.path.getmtime(os.path.join(base_path, fold, f)))}) for f in os.listdir(os.path.join(base_path, fold)) if f.endswith('.txt')]
+        files1 = [files.update({os.path.join(base_path, fold, f): int(os.path.getmtime(os.path.join(base_path, fold, f)))}) for f in os.listdir(os.path.join(base_path, fold)) if (f.endswith('.txt') and (os.path.getsize(os.path.join(base_path, fold, f)) > min_file_size))]
 
     if not files:
         logging.error('No files found...something is wrong')

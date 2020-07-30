@@ -2,6 +2,7 @@ Input:
     base_path: D:\DHIMC
     result_folders: [ExportResultsAshburton, ExportResultsAshley, ExportResultsOpihi, ExportResultsTemuka]
     file_index: file_index.json
+    min_file_size: 30000
 Output:
     server: SQL03prod
     database: Hydrotel
