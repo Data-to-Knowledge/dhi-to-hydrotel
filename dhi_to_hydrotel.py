@@ -78,7 +78,7 @@ def main(param):
         date_col = 'Time'
 
         for f in new_files:
-            data1 = pd.read_table(f, skiprows=1, dayfirst=True, parse_dates=[date_col], infer_datetime_format=True)
+            data1 = pd.read_table(f, skiprows=1, parse_dates=[date_col], infer_datetime_format=True)
             cols = data1.columns.copy()
             data_col = [c for c in cols if c != date_col][0]
 
