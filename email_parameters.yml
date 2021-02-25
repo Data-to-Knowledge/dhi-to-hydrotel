@@ -1,0 +1,7 @@
+email:
+   smtp_server: 'mail.ecan.govt.nz'
+   smtp_port: 25
+   msg_content: 'The task "dhi_to_hydrotel" has stopped working on dhi-mc01. This task is supposed to run continuously. Action: re-start the task in task scheduler.'
+   msg_subject: 'Error: "dhi_to_hydrotel" has stopped working.'
+   sender: 'dhi-mc01@ecan.govt.nz'
+   recipients: ['wilco.terink@ecan.govt.nz', 'hamish.graham@ecan.govt.nz', 'adam.martin@ecan.govt.nz', 'lucy.just@ecan.govt.nz']

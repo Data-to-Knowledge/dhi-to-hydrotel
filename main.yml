@@ -9,3 +9,4 @@ dependencies:
 - pyyaml=5.3.1
 - pandas=1.0.5
 - pdsql=1.2.32
+- schedule
